@@ -27,7 +27,7 @@ pipeline
 			}
 		}
 		
-		/*stage('Continous Testing')
+		stage('Continous Testing')
 		{
 			steps
 			{
@@ -39,7 +39,7 @@ pipeline
 	
 	
 		
-		stage('Continuous Delivery')
+		/*stage('Continuous Delivery')
 		{
 			steps
 			{
