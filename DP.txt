@@ -7,7 +7,7 @@ pipeline
 		{
 			steps
 			{
-				git 'https://github.com/balajimanipi/maven.git'
+				git 'https://github.com/Yuvaraj7799/git-maven.git'
 			}
 		}
 		
@@ -31,7 +31,7 @@ pipeline
 		{
 			steps
 			{
-				git 'https://github.com/balajimanipi/FunctionlTesting.git'
+				git 'https://github.com/Yuvaraj7799/Functional_Testing.git'
 				sh 'java -jar /var/lib/jenkins/workspace/ScriptedPipeline/testing.jar'
 			}
 		}
