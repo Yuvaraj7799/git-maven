@@ -39,14 +39,14 @@ pipeline
 	
 	
 		
-		/*stage('Continuous Delivery')
+	        stage('Continuous Delivery')
 		{
 			steps
 			{
 				input id: 'prodadmin', message: 'Waiting for Approval from the DM'
 				sh 'scp /var/lib/jenkins/workspace/Declarative-pipeline/webapp/target/webapp.war root@172.31.10.109:/var/lib/tomcat9/webapps/prodenv.war'
 			}
-		}*/
+		}
 
 		
 	}
