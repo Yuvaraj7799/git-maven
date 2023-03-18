@@ -3,7 +3,7 @@ pipeline
 	agent { label 'master' }
 	stages
 	{
-		stage('Cont Download')
+		stage('Continuous Download')
 		{
 			steps
 			{
@@ -11,7 +11,7 @@ pipeline
 			}
 		}
 		
-		stage('Continouse Build')
+		stage('Continous Build')
 		{
 			steps
 			{
@@ -19,32 +19,32 @@ pipeline
 			}
 		}
 		
-		stage('Continouse Deploy')
+		stage('Continous Deploy')
 		{
 			steps
 			{
-				sh 'scp /var/lib/jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war root@:172.31.12.110/var/lib/tomcat9/webapps/testenv.war'
+				sh 'scp /var/lib/jenkins/workspace/Declarative-pipeline/webapp/target/webapp.war root@:172.31.12.110/var/lib/tomcat9/webapps/testenv.war'
 			}
 		}
 		
-		/*stage('Continouse Testing')
+		/*stage('Continous Testing')
 		{
 			steps
 			{
 				git 'https://github.com/Yuvaraj7799/Functional_Testing.git'
-				sh 'java -jar /var/lib/jenkins/workspace/ScriptedPipeline/testing.jar'
+				sh 'java -jar /var/lib/jenkins/workspace/Declarative-pipeline/testing.jar'
 			}
 		}
 		
 	
 	
 		
-		stage('ContDelivery')
+		stage('Continuous Delivery')
 		{
 			steps
 			{
 				input id: 'prodadmin', message: 'Waiting for Approval from the DM'
-				sh 'scp /var/lib/jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war root@172.31.10.109:/var/lib/tomcat9/webapps/prodenv.war'
+				sh 'scp /var/lib/jenkins/workspace/Declarative-pipeline/webapp/target/webapp.war root@172.31.10.109:/var/lib/tomcat9/webapps/prodenv.war'
 			}
 		}*/
 
