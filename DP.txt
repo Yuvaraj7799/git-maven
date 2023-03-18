@@ -11,7 +11,7 @@ pipeline
 			}
 		}
 		
-		/*stage('Continouse Build')
+		stage('Continouse Build')
 		{
 			steps
 			{
@@ -27,7 +27,7 @@ pipeline
 			}
 		}
 		
-		stage('Continouse Testing')
+		/*stage('Continouse Testing')
 		{
 			steps
 			{
