@@ -23,7 +23,7 @@ pipeline
 		{
 			steps
 			{
-				sh 'scp /var/lib/jenkins/workspace/Declarative-pipeline/webapp/target/webapp.war root@:172.31.12.110/var/lib/tomcat9/webapps/testenv.war'
+				sh 'scp /var/lib/jenkins/workspace/Declarative-pipeline/webapp/target/webapp.war root@172.31.12.110:/var/lib/tomcat9/webapps/testenv.war'
 			}
 		}
 		
