@@ -33,12 +33,14 @@ pipeline
 			{
 				git 'https://github.com/balajimanipi/FunctionlTesting.git'
 				sh 'java -jar /var/lib/jenkins/workspace/ScriptedPipeline/testing.jar'
+                                echo "Testing successfull"
 			}
+                        
 		}
 		
 	}
 	
-		echo "Testing successfull"
+		
 		stage('ContDelivery')
 		{
 			steps
