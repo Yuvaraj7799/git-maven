@@ -38,7 +38,7 @@ pipeline
                         
 		}
 		
-	}
+	
 	
 		
 		stage('ContDelivery')
@@ -50,6 +50,6 @@ pipeline
 			}
 		}
 
-		
+	}	
 	
 }
