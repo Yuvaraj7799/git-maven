@@ -32,7 +32,7 @@ pipeline
 			steps
 			{
 				git 'https://github.com/Yuvaraj7799/Functional_Testing.git'
-				sh 'java -jar /var/lib/jenkins/workspace/ScriptedPipeline/testing.jar'
+				sh 'java -jar /var/lib/jenkins/workspace/Descriptive-pipeline/testing.jar'
                                 echo "Testing successfull"
 			}
                         
